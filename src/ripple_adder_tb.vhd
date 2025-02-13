@@ -50,10 +50,18 @@ begin
 	       assert (w_sum = x"F" and w_Cout = '1') report "bad with ones" severity failure;
        -- TODO, a few other test cases
        w_addends <= x"1F"; w_Cin <= '1'; wait for 10 ns;
-	       assert (w_sum = x"1" and w_Cout = '1') report "bad with 1F" severity failure;
-	       
-	       --add more assert statements!!!
-	
+	       assert (w_sum = x"1" and w_Cout = '1') report "bad with 1F + 1" severity failure;
+	   w_addends <= x"00"; w_Cin <= '1'; wait for 10 ns;
+	       assert (w_sum = x"1" and w_Cout = '0') report "bad with 00 + 1" severity failure;
+	   w_addends <= x"AA"; w_Cin <= '1'; wait for 10 ns;
+	       assert (w_sum = x"5" and w_Cout = '1') report "bad with 00 + 1" severity failure;  
+	   w_addends <= x"4F"; w_Cin <= '0'; wait for 10 ns;
+	       assert (w_sum = x"3" and w_Cout = '1') report "bad with 00 + 1" severity failure;  
+	         
+	   
+	   
+	   --to get a nice diagram
+	   --assert true = false severity failure;
 		wait; -- wait forever
 	end process;	
 	-----------------------------------------------------	

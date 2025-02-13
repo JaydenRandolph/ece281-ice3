@@ -22,3 +22,10 @@ Then it **elaborates** the entity defined by `$TB_ENTITY`
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+## Images
+![Waveform with Tests](<Waveform with Tests.png>)
+![Sketch of the Entity](Sketch.png)
+
+## Documentation
+Received EI with Dr. York to figure out why my Vivado wasn't working. I was having issues with the variable names so we fixed it during EI.
