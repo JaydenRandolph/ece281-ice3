@@ -25,7 +25,7 @@ Assert statements of other severity levels will be reported, but not fail the wo
 
 ## Images
 ![Waveform with Tests](<Waveform with Tests.png>)
-![Sketch of the Entity](Sketch.png)
+![Sketch of the Entity](Sketch-1.png)
 
 ## Documentation
 Received EI with Dr. York to figure out why my Vivado wasn't working. I was having issues with the variable names so we fixed it during EI.
